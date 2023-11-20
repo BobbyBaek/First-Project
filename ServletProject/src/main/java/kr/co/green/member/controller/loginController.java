@@ -28,7 +28,7 @@ public class loginController extends HttpServlet {
 		response.getWriter().append("Served at: ").append(request.getContextPath());
 	}
 
-	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+	public void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// 1. 유저가 입력한 데이터 받기
 		String id = request.getParameter("username");
 		String pwd = request.getParameter("password");

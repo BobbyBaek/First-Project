@@ -21,7 +21,7 @@ public class FreeDetailController extends HttpServlet {
         super();
     }
 
-	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+	public void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// 1. idx 받기
 		int idx = Integer.parseInt(request.getParameter("idx"));
 		
